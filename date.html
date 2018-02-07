@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript 中的DATE对象的基本使用</title>
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            background: #292d35
+        }
+
+        #display-date {
+            width: 300px;
+            height: 200px;
+            margin: 30px auto;
+            padding: 120px 100px;
+            border: 2px solid #fff;
+            color: aqua;
+        }
+
+        #display-info {
+            width: 500px;
+            height: 400px;
+            border: 2px solid #fff;
+            margin: 100px auto;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        #display-info h3 {
+            text-align: center;
+            line-height: 1.8;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            changeTime();
+            setInterval(changeTime, 1000);
+            // change the time to two-digit string
+            function toDouble(time) {
+                if(time > 10) {
+                    return time.toString();
+                } else {
+                    return "0"+time.toString();
+                }
+            }
+
+            // change the time every second
+            function changeTime() {
+                // get the element id
+                var hours = document.getElementById("hours");
+                var minute = document.querySelector("#minute");
+                var second = document.querySelector("#second");
+
+                // create a new  Date object
+                var today = new Date();
+
+                hours.innerText = toDouble(today.getHours()) + " : ";
+                minute.innerText = toDouble(today.getMinutes()) + " : ";
+                second.innerText = toDouble(today.getSeconds());
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="display-date">
+    <span id="hours"></span>
+    <span id="minute"></span>
+    <span id="second"></span>
+</div>
+<div id="display-info">
+    <h3>information</h3>
+    <div id="info">
+        <p>the following functions are used here.</p>
+        <p>innerText, toString, getElementById, querySelector, getHours, getMinutes, getSecond</p>
+        <p>last but not least, setInterval, if we want to cancel the timer, we need to use clearInterval</p>
+        <p>of course, we can use setTimeout, if we want to cancel the timer, we need to use clearTimeout</p>
+    </div>
+</div>
+</body>
+</html>
