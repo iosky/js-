@@ -29,7 +29,7 @@
 </style>
 <script>
   // 将ajax封装成函数
-  function ajax(url, method, fuSuccess, fuFailed {
+  function ajax(url, method, fuSuccess, fuFailed) {
     var oAjax = new XMLHttpRequest();
     if (method === "GET") {
       oAjax.open("GET", url + "?t=" + Math.random(), true);
