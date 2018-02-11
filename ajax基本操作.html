@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajax基本操作</title>
+</head>
+<style>
+  #display-date {
+    width: 600px;
+    height: 350px;
+    outline: 1px dashed coral;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #get-date {
+    display: block;
+    margin: 100px auto;
+    width: 150px;
+    height: 50px;
+  }
+</style>
+<script>
+  // 将ajax封装成函数
+  function ajax(url, method, fuSuccess, fuFailed {
+    var oAjax = new XMLHttpRequest();
+    if (method === "GET") {
+      oAjax.open("GET", url + "?t=" + Math.random(), true);
+      oAjax.send();
+    } else if (method === "POST") {
+      oAjax.open("POST", "ajaxText.txt?t" + Math.random(), true);
+      oAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      oAjax.send("name=hello&password=world");
+    }
+    oAjax.onreadystatechange = function () {
+      if (oAjax.readyState === 4) {
+        if (oAjax.status === 200) {
+          fuSuccess(oAjax.responseText);
+        } else {
+          if (fuFailed) {
+            fuFailed(oAjax.status);
+          }
+        }
+      }
+    }
+  }
+
+  window.onload = function (ev) {
+    var btn = document.getElementById("get-date");
+    var display = document.querySelector("#display-date");
+    btn.onclick = function () {
+      ajax("ajaxText.txt", "POST", function (responseText) {
+        display.innerHTML = responseText;
+      });
+    }
+    /*btn.onclick = function (ev2) {
+      // 1 new object
+      var ajax = new XMLHttpRequest();
+      // 2 connection
+      // 在路径下的 "?t=" + Math.random, 目的是为了每次都去改变URL，以便清除ajax的缓存
+      ajax.open("GET", "ajaxText.txt?t="+Math.random(), true);
+      // 3 send
+      ajax.send();
+      // 4 get
+      ajax.onreadystatechange = function (ev3) {
+        if(ajax.readyState === 4 && ajax.status === 200) {
+          display.innerText = ajax.responseText;
+        }
+      }
+    }*/
+  }
+</script>
+<body>
+<!--编写ajax基本流程-->
+<!--1. 创建一个ajax对象，即XMLHttpRequest对象-->
+<!--2. 连接服务器-->
+<!--3. 发送数据请求-->
+<!--4. 接收返回数据-->
+<button id="get-date" value="get-date">获取数据</button>
+<div id="display-date"></div>
+</body>
+</html>
