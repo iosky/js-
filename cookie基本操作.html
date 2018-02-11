@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cookie基本操作</title>
+</head>
+<style>
+  body {
+    margin: 0;
+  }
+
+  form {
+    width: 700px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+</style>
+<script>
+  window.onload = function () {
+    var form = document.getElementById("cookie");
+    var username = document.getElementById("username");
+    form.onsubmit = function () {
+      setCookie(username.name, username.value, 14);
+    };
+    if (getCookie1(username.name)) {
+      alert(getCookie1(username.name));
+      username.value = getCookie2(username.name);
+    }
+
+    function removeCookie(name) {
+      setCookie(name, 1 - 1);
+    }
+
+    function setCookie(name, value, ex_day) {
+      ex_day = ex_day || 14;
+      var time = new Date();
+      time.setDate(time.getDate() + ex_day);
+      document.cookie = "username=" + username.value + "; " + "expires=" + time;
+    }
+
+    function getCookie2(name) {
+      var arr = document.cookie.split("; ");
+      for (var i = 0; i < arr.length; i++) {
+        var arr2 = arr[i].split("=");
+        if (arr2[0] === name) {
+          return arr2[1];
+        }
+      }
+      return "";
+    }
+
+    function getCookie1(cName) {
+      if (document.cookie.length > 0) {
+        // 先判断是否已经有cookie
+        var c_start = document.cookie.indexOf(cName + "=");
+        if (c_start !== -1) {
+          // 再判断是否存在该键值对
+          c_start += cName.length + 1;
+          // 后面加的这个1，表示跳过 “=”
+          var c_end = document.cookie.indexOf(":", c_start);
+          if (c_end === -1) {
+            // 判断是否是最后一个键值对
+            c_end = document.cookie.length;
+          }
+          return document.cookie.substring(c_start, c_end);
+        }
+      }
+      return "";
+    }
+
+    // set browser cookie
+    // document.cookie = "username=iosky";
+    // document.cookie = "pwd=123456";
+    // of course, we can also use this method to set cookie
+    // document.cookie = "username=iosky; pwd=123456";
+    // it is worth noting that the key-value  pairs are separated by Semicolons and Spaces
+
+    // set cookie expires
+    // var time = new Date();
+    // time.setDate(time.getDate()+14);
+    // document.cookie = "expires="+time;
+  }
+</script>
+<body>
+<form id="cookie" action="https://www.baidu.com" method="get">
+  <label for="username">username: </label>
+  <input type="text" name="username" title="username" id="username">
+  <label for="pwd">password: </label>
+  <input type="password" title="pwd" name="pwd" id="pwd">
+  <input type="submit" value="sign in">
+</form>
+</body>
+</html>
