@@ -1,62 +1,67 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>delay prompt box</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        div {
-            box-sizing: border-box;
-            cursor: pointer;
-        }
-        #master {
-            width: 120px;
-            height: 60px;
-            border: 2px solid #292d35;
-            margin: 50px auto;
-            line-height: 60px;
-            text-align: center;
-            color: #292d35;
-        }
-        #slave {
-            display: none;
-            width: 150px;
-            height: 100px;
-            border: 2px solid #292d35;
-            margin: 10px auto;
-            line-height: 100px;
-            text-align: center;
-            color: #292d35;
-        }
-    </style>
-    <script>
-        window.onload = function() {
-            // get the element id
-            var master = document.getElementById("master");
-            var slave = document.querySelector("#slave");
-            var timer = null;
-            master.onmouseover = slave.onmouseover = function() {
-                if(timer !== null) {
-                    clearTimeout(timer);
-                    timer = null;
-                }
-                slave.style.display = "block";
-            };
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>delay prompt box</title>
+  <style>
+    body {
+      margin: 0;
+    }
 
-            slave.onmouseout = master.onmouseout = function() {
-                timer = setTimeout(function() {
-                    slave.style.display = "none";
-                }, 500);
-            }
+    div {
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    #master {
+      width: 120px;
+      height: 60px;
+      border: 2px solid #292d35;
+      margin: 50px auto;
+      line-height: 60px;
+      text-align: center;
+      color: #292d35;
+    }
+
+    #slave {
+      display: none;
+      width: 150px;
+      height: 100px;
+      border: 2px solid #292d35;
+      margin: 10px auto;
+      line-height: 100px;
+      text-align: center;
+      color: #292d35;
+      transition: all .4s ease;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      // get the element id
+      var master = document.getElementById("master");
+      var slave = document.querySelector("#slave");
+      var timer = null;
+      master.onmouseover = slave.onmouseover = function () {
+        if (timer !== null) {
+          clearTimeout(timer);
+          timer = null;
         }
-    </script>
+        slave.style.display = "block";
+      };
+
+      slave.onmouseout = master.onmouseout = function () {
+        timer = setTimeout(function () {
+          slave.style.display = "none";
+        }, 500);
+      }
+    }
+  </script>
 </head>
 <body>
-    <div id="master">I'm master</div>
-    <div id="slave">I'm your slave</div>
+<div id="master">I'm master</div>
+<div id="slave">I'm your slave</div>
 </body>
 </html>

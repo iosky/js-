@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>鼠标事件</title>
+  <style>
+    body, html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .parent {
+      width: 300px;
+      height: 200px;
+      background: #292d35;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .son {
+      width: 100px;
+      height: 50px;
+      background: coral;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent leave">
+    <div class="son">mouseLeave <span></span></div>
+  </div>
+  <div class="parent out">
+    <div class="son">mouseOut <span></span></div>
+  </div>
+  <div class="parent enter">
+    <div class="son">mouseEnter <span></span></div>
+  </div>
+  <div class="parent over">
+    <div class="son">mouseOver <span></span></div>
+  </div>
+</body>
+<script>
+  window.onload = ()=>{
+    let parents = document.querySelectorAll('.parent');
+    parents[0].onmouseleave = ()=>{
+      handle('.leave');
+    };
+    parents[1].onmouseout = ()=>{
+      handle('.out');
+    };
+    parents[2].onmouseenter = ()=>{
+      handle('.enter');
+    };
+    parents[3].onmouseover = ()=>{
+      handle('.over');
+    };
+    function handle(el) {
+      let value = Number(document.querySelector(el + ' span').innerHTML);
+      value += 1;
+      document.querySelector(el + ' span').innerHTML = value + '';
+    }
+  };
+</script>
+</html>

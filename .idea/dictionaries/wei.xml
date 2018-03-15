@@ -1,3 +1,9 @@
 <component name="ProjectDictionaryState">
-  <dictionary name="wei" />
+  <dictionary name="wei">
+    <words>
+      <w>mouseleave</w>
+      <w>onmouseenter</w>
+      <w>onsubmit</w>
+    </words>
+  </dictionary>
 </component>
