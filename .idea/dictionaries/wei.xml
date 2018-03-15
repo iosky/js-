@@ -2,6 +2,9 @@
   <dictionary name="wei">
     <words>
       <w>mouseleave</w>
+      <w>mousemove</w>
+      <w>mouseoup</w>
+      <w>mouseup</w>
       <w>onmouseenter</w>
       <w>onsubmit</w>
     </words>
