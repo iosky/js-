@@ -30,8 +30,9 @@ function _$(id) {
       return this;
     }
   }
-  $('#id').setName('xesam').getName(function(name) {
-    console.log(name);
-  }).show().hide().show().hide().show();
+  // 测试代码
+  // $('#id').setName('xesam').getName(function(name) {
+  //   console.log(name);
+  // }).show().hide().show().hide().show();
 }
 }
