@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cec6b9e-a17a-4e4b-a650-3b4ff38dea03" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test.css" />
+    <list default="true" id="8cec6b9e-a17a-4e4b-a650-3b4ff38dea03" name="Default" comment="增加css测试文件">
+      <change beforePath="" afterPath="$PROJECT_DIR$/promiseTest2.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/链式调用.js" afterPath="$PROJECT_DIR$/链式调用.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +20,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="object2.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/object2.html">
+      <file leaf-file-name="promise.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/promise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="244" column="40" lean-forward="true" selection-start-line="244" selection-start-column="40" selection-end-line="244" selection-end-column="40" />
+            <state relative-caret-position="351">
+              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promiseTest2.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/promiseTest2.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promise.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/promise.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="655">
+              <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promiseTest.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/promiseTest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -36,8 +65,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -55,7 +85,6 @@
         <option value="$PROJECT_DIR$/date.html" />
         <option value="$PROJECT_DIR$/date.md" />
         <option value="$PROJECT_DIR$/ajaxText.txt" />
-        <option value="$PROJECT_DIR$/ajax基本操作.html" />
         <option value="$PROJECT_DIR$/mouseEvent.html" />
         <option value="$PROJECT_DIR$/cookie基本操作.html" />
         <option value="$PROJECT_DIR$/promptBox.html" />
@@ -63,6 +92,11 @@
         <option value="$PROJECT_DIR$/object2.html" />
         <option value="$PROJECT_DIR$/链式调用.js" />
         <option value="$PROJECT_DIR$/test.css" />
+        <option value="$PROJECT_DIR$/ajax基本操作.html" />
+        <option value="$PROJECT_DIR$/promise.html" />
+        <option value="$PROJECT_DIR$/promiseTest.json" />
+        <option value="$PROJECT_DIR$/promiseTest2.json" />
+        <option value="$PROJECT_DIR$/promise.js" />
       </list>
     </option>
   </component>
@@ -91,25 +125,13 @@
             <id />
           </State>
           <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Code style issuesCSS</id>
+            <id>Bitwise operation issuesJavaScript</id>
           </State>
           <State>
             <id>Code style issuesJavaScript</id>
           </State>
           <State>
-            <id>Cucumber</id>
-          </State>
-          <State>
-            <id>Dockerfile issues</id>
-          </State>
-          <State>
-            <id>File Watchers</id>
-          </State>
-          <State>
-            <id>General</id>
+            <id>Flow type checkerJavaScript</id>
           </State>
           <State>
             <id>GeneralJavaScript</id>
@@ -118,19 +140,22 @@
             <id>HTML</id>
           </State>
           <State>
-            <id>Invalid elementsCSS</id>
+            <id>Internationalization issues</id>
           </State>
           <State>
             <id>JavaScript</id>
           </State>
           <State>
-            <id>Probable bugsCSS</id>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
           </State>
           <State>
             <id>Probable bugsJavaScript</id>
           </State>
           <State>
-            <id>RELAX NG</id>
+            <id>Spelling</id>
           </State>
           <State>
             <id>TypeScript</id>
@@ -139,14 +164,9 @@
             <id>XML</id>
           </State>
           <State>
-            <id>docker-compose</id>
+            <id>XPath</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>AngularJS</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -176,6 +196,11 @@
               <item name="js基础学习" type="b2602c69:ProjectViewProjectNode" />
               <item name="js基础学习" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="js基础学习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js基础学习" type="462c0819:PsiDirectoryNode" />
+              <item name=".vscode" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -184,7 +209,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="S:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -210,6 +235,14 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="promise.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="promise.js" working-dir="$PROJECT_DIR$" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.promise.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -233,7 +266,7 @@
       <workItem from="1521091032511" duration="6395000" />
       <workItem from="1521960961853" duration="709000" />
       <workItem from="1521966168299" duration="2940000" />
-      <workItem from="1521969299740" duration="1880000" />
+      <workItem from="1521969299740" duration="8969000" />
     </task>
     <task id="LOCAL-00001" summary="the basic use of date object">
       <created>1517987786397</created>
@@ -298,11 +331,25 @@
       <option name="project" value="LOCAL" />
       <updated>1521968689102</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="增加css测试文件">
+      <created>1521971236164</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1521971236164</updated>
+    </task>
+    <task id="LOCAL-00011" summary="学习promise的基础使用">
+      <created>1521979756693</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1521979756693</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45404000" />
+    <option name="totallyTimeSpent" value="52493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -312,10 +359,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827103" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32748538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15274842" sideWeight="0.5040936" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -323,7 +371,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -343,10 +390,14 @@
     <MESSAGE value="编写基本的拖拽操作" />
     <MESSAGE value="使用es5的语法构建对象" />
     <MESSAGE value="修改代码风格" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改代码风格" />
+    <MESSAGE value="增加css测试文件" />
+    <MESSAGE value="学习promise的基础使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="学习promise的基础使用" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -525,20 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax基本操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cookie基本操作.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2301">
-          <caret line="59" column="32" lean-forward="false" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mouseEvent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -581,6 +618,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/object2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11310">
+          <caret line="288" column="6" lean-forward="true" selection-start-line="288" selection-start-column="6" selection-end-line="288" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
@@ -589,10 +634,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/object2.html">
+    <entry file="file://$PROJECT_DIR$/cookie基本操作.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="244" column="40" lean-forward="true" selection-start-line="244" selection-start-column="40" selection-end-line="244" selection-end-column="40" />
+        <state relative-caret-position="-18">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax基本操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promiseTest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="29" column="6" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promiseTest2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
