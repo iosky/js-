@@ -226,22 +226,23 @@
       this.elem = document.getElementById(selector);
       this.startX = 0;
       this.startY = 0;
-      this.sourceX= 0;
+      this.sourceX = 0;
       this.sourceY = 0;
       this.init();
     }
+
     Drag.prototype = {
       constructor: Drag,
-      init: function (){
+      init: function () {
         this.setDrag();
       },
-      getStyle: function(property) {
+      getStyle: function (property) {
         return window.getComputedStyle(this.elem, null)[property];
       },
       getPosition: function () {
         let pos = {x: 0, y: 0};
         let transformValue = this.getStyle('transform');
-        if(transformValue !== 'none') {
+        if (transformValue !== 'none') {
           let temp = transformValue.match(/[-?0-9,\s]+/g).toString().split(',');
           pos = {
             x: Number.parseInt(temp[4].trim()),
@@ -258,7 +259,8 @@
       setDrag: function () {
         let self = this;
         this.elem.addEventListener('mousedown', start);
-        function start(ev){
+
+        function start(ev) {
           self.startX = ev.pageX;
           self.startY = ev.pageY;
           let pos = self.getPosition();
@@ -267,7 +269,8 @@
           document.addEventListener('mousemove', move);
           document.addEventListener('mouseup', end);
         }
-        function move(ev){
+
+        function move(ev) {
           let currentX = ev.pageX;
           let currentY = ev.pageY;
           let distanceX = currentX - self.startX;
@@ -277,7 +280,8 @@
             y: (self.sourceY + distanceY).toFixed()
           })
         }
-        function end(ev){
+
+        function end(ev) {
           document.removeEventListener('mousemove', move);
           document.removeEventListener('mouseup', end);
         }

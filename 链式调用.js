@@ -7,32 +7,32 @@ window.$ = function () {
   'use strict';
   return new _$(id);
 
-function _$(id) {
-  this.element = document.querySelector(id);
-  _$.prototype = {
-    constructor: _$,
-    hide: function() {
-      console.log('hide');
-      return this;
-    },
-    show: function() {
-      consoloe.log('show');
-      return this;
-    },
-    getName: function(callback) {
-      if(callback) {
-        callback.call(this, this.name);
+  function _$(id) {
+    this.element = document.querySelector(id);
+    _$.prototype = {
+      constructor: _$,
+      hide: function () {
+        console.log('hide');
+        return this;
+      },
+      show: function () {
+        consoloe.log('show');
+        return this;
+      },
+      getName: function (callback) {
+        if (callback) {
+          callback.call(this, this.name);
+        }
+        return this;
+      },
+      setName: function (name) {
+        this.name = name;
+        return this;
       }
-      return this;
-    },
-    setName: function(name) {
-      this.name = name;
-      return this;
     }
+    // 测试代码
+    // $('#id').setName('xesam').getName(function(name) {
+    //   console.log(name);
+    // }).show().hide().show().hide().show();
   }
-  // 测试代码
-  // $('#id').setName('xesam').getName(function(name) {
-  //   console.log(name);
-  // }).show().hide().show().hide().show();
-}
 }
