@@ -16,7 +16,7 @@ window.$ = function () {
         return this;
       },
       show: function () {
-        consoloe.log('show');
+        console.log('show');
         return this;
       },
       getName: function (callback) {
