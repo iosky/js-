@@ -1,6 +1,6 @@
-import bar from './module';
+import test from './module';
 
 const app = document.querySelector('#root');
-app.innerHTML = '开始学习es6的module语法';
+app.innerHTML = '开始学习es6的module语法'
 
-console.log(bar);
+console.log(test);

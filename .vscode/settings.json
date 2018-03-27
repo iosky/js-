@@ -1,2 +1,5 @@
 {
+  "eslint.options": {
+    "configFile": "D:/js基础学习/.eslintrc.js"
+  }
 }

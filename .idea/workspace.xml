@@ -280,7 +280,7 @@
       <workItem from="1521960961853" duration="709000" />
       <workItem from="1521966168299" duration="2940000" />
       <workItem from="1521969299740" duration="8991000" />
-      <workItem from="1522065527495" duration="6374000" />
+      <workItem from="1522065527495" duration="6406000" />
     </task>
     <task id="LOCAL-00001" summary="the basic use of date object">
       <created>1517987786397</created>
@@ -366,11 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521979779502</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="增加module语法学习">
+      <created>1522075430747</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1522075430747</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58889000" />
+    <option name="totallyTimeSpent" value="58921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -414,7 +421,8 @@
     <MESSAGE value="增加css测试文件" />
     <MESSAGE value="学习promise的基础使用" />
     <MESSAGE value="增加promise测试文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加promise测试文件" />
+    <MESSAGE value="增加module语法学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加module语法学习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
