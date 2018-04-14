@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>resolve and reject</title>
+</head>
+<style>
+  #app {
+    width: 400px;
+    height: 200px;
+    outline: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<body>
+
+  <div id="app"></div>
+
+</body>
+<script>
+  let app = document.querySelector('#app')
+  let myPromise = Promise.resolve('hello !!!')
+  let myPromise2 = new Promise((resolve, reject) => {
+    resolve('hello !!!')
+  })
+  let myErrPromise = Promise.reject('error !!!')
+  let myErrPromise2 = new Promise((resolve, reject) => {
+    reject('error !!!')
+  })
+  console.log(myErrPromise, myErrPromise2)
+  console.log(myPromise, myPromise2)
+  myPromise.then((msg) => {
+    app.innerHTML = msg
+  })
+  myErrPromise.then((msg) => {
+    app.innerHTML = msg
+  }).catch((msg) => {
+    console.log(msg)
+  })
+</script>
+
+</html>

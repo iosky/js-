@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ajax</title>
+</head>
+<style>
+  #app {
+    width: 400px;
+    height: 200px;
+    outline: 1px solid red;
+  }
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  window.onload = () => {
+    let app = document.querySelector('#app')
+    let getJson = url => {
+      let promise = new Promise((resolve, reject) => {
+        let XHR = new XMLHttpRequest()
+        XHR.open('GET', url)
+        XHR.onreadystatechange = handler
+        XHR.responseType = 'json'
+        XHR.setRequestHeader('Accept', 'application/json')
+        XHR.send()
+
+        function handler() {
+          if (this.readyState !== 4) {
+            return
+          }
+          if (this.status === 200) {
+            resolve(this.response)
+          } else {
+            reject(new Error(this.statusText))
+          }
+        }
+      })
+      return promise
+    }
+    getJson('./poss.json').then(json => {
+      app.innerHTML = `name: ${ json.name }  age: ${ json.age }  sex: ${ json.sex }`
+    }).catch(err => {
+      console.error(`error: ${ err }`)
+    })
+  }
+</script>
+
+</html>
