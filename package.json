@@ -1,0 +1,26 @@
+{
+  "name": "jslearn",
+  "version": "1.0.0",
+  "description": "学习基本的js其实，不过是去了解基本的语法，高级运用，我觉得都是经过编写大量的代码，去更加了解js的特性才会编写简洁又高效的代码。当然现在我还没有这样的实力，不过这些都是建立在自己认真学习原生js的基础之上的。因此，在我看来，学习原生js相当重要。",
+  "main": "promise.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iosky/js-.git"
+  },
+  "author": "WEI (https://github.com/iosky)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iosky/js-/issues"
+  },
+  "homepage": "https://github.com/iosky/js-#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0"
+  }
+}
